@@ -2,13 +2,14 @@
   import { getSession, login, logout } from '@/model/session'
 
   const session = getSession()
+
   const doLogin = () => {
-    login();
+    login('hbingley1@plala.or.jp', 'CQutx25i8r')
   }
+
   const doLogout = () => {
     logout();
   }
-
 
 </script>
 
@@ -28,7 +29,7 @@
     <a class="button is-primary">
       <strong>Sign up</strong>
     </a>
-    <a class="button is-light" @click.prevent="login">
+    <a class="button is-light" @click.prevent="doLogin">
       Log in
     </a>
   </div>
